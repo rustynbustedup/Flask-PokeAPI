@@ -1,0 +1,63 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the whole page */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Title styling */
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Card container styling: uses flexbox to arrange cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Individual card styling */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Card image styling */
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Card body styling */
+.card-body {
+  padding: 15px;
+}
+
+/* Card title styling */
+.card-title {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+/* Card text styling */
+.card-text {
+  color: #555;
+  margin-top: 5px;
+}
