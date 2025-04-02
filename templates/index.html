@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>First 150 Pokémon</title>
+    <!-- Link to Bootstrap CSS for styling -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="my-4 text-center">First 150 Pokémon</h1>
+      <div class="row">
+        <!-- Loop through each Pokémon and create a card -->
+        {% for pokemon in pokemons %}
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="card">
+            <img
+              src="{{ pokemon.image }}"
+              class="card-img-top"
+              alt="{{ pokemon.name }}"
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{ pokemon.name }}</h5>
+              <p class="card-text">ID: {{ pokemon.id }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>
